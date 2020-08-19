@@ -1,0 +1,29 @@
+// COLORS
+$blue_dark: #033152;
+$blue: #0168b3;
+$blue_light: #59baff;
+$green: #daf431;
+$grey: #f1f1f1;
+$white: #fff;
+
+// TYPO
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// MIXINS
+@mixin transition($param) {
+  -webkit-transition: $param;
+  -moz-transition: $param;
+  -ms-transition: $param;
+  transition: $param;
+}
+@mixin box-sizing($param) {
+  -webkit-box-sizing: $param;
+  -moz-box-sizing: $param;
+  -ms-box-sizing: $param;
+  box-sizing: $param;
+}
+
+// WIDTH
+$maxwidht: 1400px;

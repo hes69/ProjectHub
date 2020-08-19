@@ -1,0 +1,278 @@
+
+// Variables
+@import "variables";
+@import "header";
+
+html, body {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  background: $white;
+  font-size: $font-size-base;
+  font-family: 'Oswald', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#app {
+  width: 100%;
+  max-width: $maxwidht;
+  background: $white;
+  margin: 0px auto;
+}
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  background-color: $green;
+}
+.container {
+  position: relative;
+  display: block;
+  background: $white;
+  @include box-sizing(border-box);
+  padding: 0px 50px;
+  min-height: 100vh;
+
+}
+.admincontainer {
+  position: relative;
+  display: block;
+  background: $white;
+  @include box-sizing(border-box);
+  padding: 0px 50px;
+  margin-left: 100px;
+}
+
+.project {
+  width: 32%;
+  margin-right: 2%;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  &:nth-child(3n +3) {
+    margin-right: 0;
+  }
+  h3 {
+    font-size: 1em;
+    text-transform: none;
+    margin-top: 5px;
+  }
+}
+img.ib {
+  width: 100%;
+  height: auto;
+  max-height: 225px;
+  display: block;
+
+}
+
+.placeholder{
+  border: 15px solid $grey;
+  width: 100%;
+  height: 255px;
+  display: block;
+  background-color: $grey;
+
+  &:hover {
+    background: $blue_dark;
+    @include transition(all .3s ease-in-out);
+  }
+
+}
+
+.row {
+  margin: 0px;
+}
+.col-md-4
+{
+  margin: 0px;
+  padding-left: 0px;
+}
+.col-md-3
+{
+  margin: 0px;
+  padding-left: 0px;
+}
+h1{
+  color: $blue_dark;
+  font-size: 8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  margin:50px 0px 5px 0px;
+  line-height: 1em;
+}
+
+h2{
+  display: inline-block;
+  color: $blue_dark;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  margin:15px 10px 15px 0px;
+  line-height: 1em;
+}
+
+.shl{
+  display: inline-block;
+  color: $blue_dark;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  margin:15px 0px;
+  line-height: 1em;
+}
+h4{
+  display: inline-block;
+  color: $blue_light;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  margin:10px 0px 0px 0px;
+  line-height: 1em;
+}
+.textbox
+{
+  margin:0px 7px 20px 0px;
+  background-color: $grey;
+}
+.rtextbox
+{
+  display: block;
+  margin:0px 7px 0px 0px;
+  background-color: $grey;
+  hieght:20px;
+  width: 250px;
+
+}
+
+
+input {
+  padding: 5px 7px ;
+  border: 0px solid #000000;
+  outline: none;
+  box-shadow: 0 0 0 0 #000000;
+}
+input[type=submit] {
+  background-color: $blue_dark;
+  text-transform: uppercase;
+  color: $blue_light;
+}
+
+footer
+{
+
+  border-top: 2px solid $blue_dark;
+  display: block;
+
+
+}
+.login {
+  margin:0px 0px 0px 10px;
+  background-color:$blue_dark ;
+  border-style: solid;
+  border-width: 0px 0px 0px 20px;
+  border-color: $green;
+  font-size: 1em;
+  padding: 5px 7px;
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  right: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+.register {
+  margin:0px 0px 0px 10px;
+  background-color:$blue_dark ;
+  border-style: solid;
+  border-width: 0px 0px 0px 20px;
+  border-color: $green;
+  font-size: 1em;
+  padding: 5px 7px;
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  right: 145px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+.link {
+  margin:0px 0px 0px 10px;
+  background-color:$blue_dark ;
+  border-style: solid;
+  border-width: 0px 0px 0px 20px;
+  border-color: $green;
+  font-size: 1em;
+  padding: 5px 7px;
+  display: inline-block;
+  width: auto;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+.contact {
+  a {
+    background-color: $blue_dark ;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 3em;
+    line-height: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    color: $blue;
+    padding: 5px 7px;
+    text-transform: uppercase;
+    .small {
+      font-size: .5em;
+      line-height: 1em;
+      cursor: pointer;
+      font-weight: bold;
+      color: $blue_light;
+    }
+  }
+}
+
+impressum {
+  margin:0px 50px 0px 10px;
+
+}
+
+footer {
+  position: relative;
+margin-top: 50px;
+  margin-bottom:20px ;
+  bottom: 0;
+  ul {
+    margin: 0;
+    padding: 0px;
+    li {
+      margin: 0;
+      display: inline-block;
+    }
+  }
+  text-align: right;
+}
+.footer__leftnavi {
+  position: absolute;
+  left: 0px;
+}
+.footer__rightnavi {
+
+}
